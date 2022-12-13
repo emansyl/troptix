@@ -12,12 +12,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   return (
-    <SessionProvider session={session}>
+    // <SessionProvider session={session}>
       <ChakraProvider>
         <Component {...pageProps} />
       </ChakraProvider>
-    </SessionProvider>
+    // </SessionProvider>
   );
 };
 
-// export default trpc.withTRPC(MyApp);
+export default MyApp;
