@@ -3,7 +3,7 @@ import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import { ChakraProvider } from "@chakra-ui/react";
 
-import { trpc } from "../utils/trpc";
+// import { trpc } from "../utils/trpc";
 
 import "../styles/globals.css";
 
@@ -20,4 +20,4 @@ const MyApp: AppType<{ session: Session | null }> = ({
   );
 };
 
-export default trpc.withTRPC(MyApp);
+// export default trpc.withTRPC(MyApp);

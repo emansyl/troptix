@@ -32,10 +32,9 @@ const Home: NextPage = () => {
           <Center>
             <Box py="10px" w="80%">
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={<SearchIcon color="gray.300" />}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <SearchIcon color="gray.300" />
+                </InputLeftElement>
                 <Input size="lg" placeholder="Search for Events" />
               </InputGroup>
             </Box>

@@ -6,8 +6,10 @@ export default function EventGrid() {
   return (
     <SimpleGrid spacing="10"columns={[1, 2, 3]} >
         {events.map(event => (
+            
             <Center>
             <EventCard
+            key={0}
             nameOfEvent={event.name}
             description={event.description}
             date={event.date}
